@@ -5,23 +5,38 @@
 }
 
 body {
-    background-color: black;
+    background-color: white;
+
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: auto;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+img {
+    margin-bottom: 30px;
 }
 
 h1 {
-    color: white;
+    color: purple;
     font-family: Helvetica;
     font-size: 70px;
     text-align: center;
     padding: 40px;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
 
-img {
-    height: 500px;
-}
+

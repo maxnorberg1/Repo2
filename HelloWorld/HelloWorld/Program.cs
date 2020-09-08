@@ -12,7 +12,7 @@ namespace HelloWorld
             Console.WriteLine("Vad heter du?");
             string name = Console.ReadLine();
 
-            Console.WriteLine("Hej simp-" + name + "!\r\n");
+            Console.WriteLine("Hej " + name + "!\r\n");
 
             Console.WriteLine("Hur gammal är du?");
 
