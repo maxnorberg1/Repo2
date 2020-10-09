@@ -1,0 +1,14 @@
+header {
+    background-color: lightblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: $textColor;
+
+    button {
+        background: $primaryBtn;
+        &:hover{
+            background: red;
+        }
+    }
+}

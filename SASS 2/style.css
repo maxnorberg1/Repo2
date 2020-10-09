@@ -1,0 +1,12 @@
+header {
+  background-color: green;
+}
+
+content button {
+  background: blue;
+}
+
+content button:hover {
+  background-color: gray;
+}
+/*# sourceMappingURL=style.css.map */

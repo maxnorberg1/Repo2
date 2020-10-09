@@ -1,0 +1,403 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body,
+html {
+  max-width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.layer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /* background-color: #002366; */
+  /* background-image: linear-gradient(to left, rgba(25, 182, 255, 0), rgba(25, 182, 255, 0.5)); */
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(121deg, rgba(0, 0, 0, 1) 23%, rgba(255, 255, 255, 0) 100%);
+  opacity: 1;
+  z-index: 3;
+}
+
+.black-layer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 4;
+
+}
+
+.full-page {
+  width: 100%;
+  height: 100vh;
+  background-image: url(alex-suprun-A53o1drQS2k-unsplash.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+
+.arrow-2 {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0%); 
+  -webkit-transform: translate(-50%, 0%);
+  bottom: 20px;
+  z-index: 2;
+  display: inline-block;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+  padding-top: 60px;
+  z-index: 70;
+}
+
+.arrow-2:hover {
+  opacity: .5;
+}
+
+
+.arrow-2 span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb04 2s infinite;
+  animation: sdb04 2s infinite;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb04 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+@keyframes sdb04 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+
+.cars-headline {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  position: relative;
+  top: 200px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  z-index: 60;
+}
+
+.cars-headline h1 {
+  font-size: clamp(2.5rem, 7vw, 7rem);
+  margin-bottom: 60px;
+}
+
+.cars-headline p {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  width: 47%;
+  line-height: 28px;
+  font-family: 'Playfair Display';
+  font-style: italic;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 80px;
+  padding-top: 200px;
+}
+
+
+.sidenav {
+  height: 100%;
+  /* Full-height: remove this if you want "auto" height */
+  width: 16%;
+  /* Set the width of the sidebar */
+  position: sticky;
+  /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1;
+  /* Stay on top */
+  top: 180px;
+  /* Stay at the top */
+  left: 10%;
+  background-color: white;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-right: 1px solid lightgray;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  line-height: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sidenav a.active {
+  font-weight: bold;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.flex-container span {
+  position: relative;
+  top: -100px;
+
+}
+
+.cars-container {
+  width: 60%;
+  position: relative;
+  top: -100px;
+  /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+
+
+.headline {
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgray;
+  font-family: 'Roboto', sans-serif;
+  color: #818181;
+  position: sticky;
+  top: 80px;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.95);
+  padding-top: 100px;
+}
+
+.headline h3 {
+  font-weight: 400;
+}
+
+.box {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 2fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 10px;
+  margin-bottom: 50px;
+  height: auto;
+  width: 100%;
+  border: 1px solid lightgray;
+  margin-top: 50px;
+}
+
+.box h2 {
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 45px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.box p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin-right: 35px;
+  line-height: 23px;
+}
+
+.box a {
+  line-height: 100px;
+  border-bottom: 3px solid black;
+  color: black;
+
+}
+
+.first-box-1 .div1 {
+  grid-area: 1 / 1 / 3 / 3;
+  background-image: url(porsche911.jpg);
+  background-size: cover;
+}
+
+.second-box-1 .div1 {
+  grid-area: 1 / 1 / 3 / 3;
+  background-image: url(maserati_main_2.png);
+  background-size: cover;
+}
+
+.third-box-1 .div1 {
+  grid-area: 1 / 1 / 3 / 3;
+  background-image: url(white_porsche.png);
+  background-size: cover;
+}
+
+.fourth-box-1 .div1 {
+  grid-area: 1 / 1 / 3 / 3;
+  background-image: url(Maserati-GranTurismo.jpg);
+  background-size: cover;
+}
+
+.fifth-box-1 .div1 {
+  grid-area: 1 / 1 / 3 / 3;
+  background-image: url(ferrari-250-gt.jpg);
+  background-size: cover;
+}
+
+.sixth-box-1 .div1 {
+  grid-area: 1 / 1 / 3 / 3;
+  background-image: url(ferrari-458-Italia-spider.jpg);
+  background-size: cover;
+}
+
+.seventh-box-1 .div1 {
+  grid-area: 1 / 1 / 3 / 3;
+  background-image: url(G_350.jpg);
+  background-size: cover;
+}
+
+
+.cars-container .div2 {
+  grid-area: 1 / 3 / 2 / 5;
+}
+
+.cars-container .div3 {
+  grid-area: 2 / 3 / 3 / 5;
+}
+
+@media screen and (max-width: 1100px) {
+  .sidenav {
+    display: none;
+  }
+
+  .cars-container {
+    width: 80%;
+  }
+
+  .box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vw 0.5fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+  }
+
+  
+
+  .cars-container .div1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .cars-container .div2 {
+    grid-area: 2 / 1 / 3 / 2;
+    margin-top: -30px;
+    padding: 20px;
+  }
+
+  .cars-container .div3 {
+    grid-area: 3 / 1 / 4 / 2;
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cars-headline p {
+    width: 80%;
+  }
+
+  .slideshow-container img,
+  .layer,
+  .black-layer {
+    height: 100vh;
+  }
+
+  .black-layer {
+    width: 100%;
+    clip-path: none;
+  }
+
+  .cars-container .div3 {
+    margin-top: -20px;
+  }
+
+  .cars-container {
+    top: -200px;
+  }
+
+  .headline {
+    padding-top: 70px;
+  }
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .cars-container {
+    width: 100%;
+  }
+
+  .cars-container .div3 {
+    margin-top: -30px;
+  }
+
+  .cars-headline p {
+    width: 100%;
+  }
+
+  .cars-container h2 {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cars-container .div3 {
+    margin-top: -50px;
+  }
+}

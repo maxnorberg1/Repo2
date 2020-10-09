@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+body,
+html {
+  max-width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+.layer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /* background-color: #002366; */
+  /* background-image: linear-gradient(to left, rgba(25, 182, 255, 0), rgba(25, 182, 255, 0.5)); */
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(121deg, rgba(0, 0, 0, 1) 23%, rgba(255, 255, 255, 0) 100%);
+  opacity: 1;
+  z-index: 3;
+}
+
+.black-layer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 4;
+  
+}
+
+.full-page {
+  width: 100%;
+  height: 100vh;
+  background-image: url(mercedes.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+
+
+.arrow-2 {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0%); 
+  -webkit-transform: translate(-50%, 0%);
+  bottom: 20px;
+  z-index: 2;
+  display: inline-block;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+  padding-top: 60px;
+  z-index: 70;
+}
+
+.arrow-2:hover {
+  opacity: .5;
+}
+
+
+.arrow-2 span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb04 2s infinite;
+  animation: sdb04 2s infinite;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb04 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+@keyframes sdb04 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+
+.cars-headline {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  position: relative;
+  top: 200px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  z-index: 60;
+}
+
+.cars-headline h1 {
+  font-size: clamp(2.5rem, 7vw, 7rem);
+  margin-bottom: 60px;
+}
+
+.cars-headline p {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  width: 47%;
+  line-height: 28px;
+  font-family: 'Playfair Display';
+  font-style: italic;
+}
+
+input[type=text], textarea, select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 0px;
+  border: none;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: 'Nunito Sans', sans-serif;
+  border: 1px solid black;
+  -webkit-appearance: none;
+  border-style:solid;
+}
+
+
+input[type=submit] {
+  width: 150px;
+  height: 55px;
+  border: 1px solid black;
+  background-color: #ffffff00;
+  color:black;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-family: 'Nunito Sans', sans-serif;
+  transition: 300ms ease all;
+  border-radius: 0px;
+  margin-bottom: 150px;
+}
+
+label {
+  text-transform: uppercase;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+input[type=submit]:hover {
+  background-color: #242424;
+  color: white;
+}
+
+/* Style the container/contact section */
+.form-container {
+  border-radius: 5px;
+  background-color: #ffffff00;
+  padding: 10px;
+  margin: auto;
+  width: 40%;
+  font-family: 'Nunito Sans', sans-serif;
+  color: white;
+  position: relative; top: 70px;
+  padding: 30px;
+}
+
+.contact-text {
+  width: 40%;
+  margin: auto;
+  padding: 30px;
+  font-family: 'Playfair Display', serif;
+  position: relative; top: 100px;
+  padding-bottom: 50px;
+  color: black;
+}
+
+h1 {
+  
+  font-size: 40px;
+  
+}
+
+hr {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1600px) {
+  .form-container, .contact-text {
+    width: 60%;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .form-container, .contact-text {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cars-headline p {
+    width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .form-container, .contact-text {
+    width: 90%;
+  }
+
+  .cars-headline p {
+    width: 100%;
+  }
+}
+
+

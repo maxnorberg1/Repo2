@@ -1,0 +1,4 @@
+C:\Users\max.norberg1\Documents\GitHub\Repo2\HelloWorld\OOPIntro\obj\Debug\netcoreapp3.1\OOPIntro.csprojAssemblyReference.cache
+C:\Users\max.norberg1\Documents\GitHub\Repo2\HelloWorld\OOPIntro\obj\Debug\netcoreapp3.1\OOPIntro.AssemblyInfoInputs.cache
+C:\Users\max.norberg1\Documents\GitHub\Repo2\HelloWorld\OOPIntro\obj\Debug\netcoreapp3.1\OOPIntro.AssemblyInfo.cs
+C:\Users\max.norberg1\Documents\GitHub\Repo2\HelloWorld\OOPIntro\obj\Debug\netcoreapp3.1\OOPIntro.csproj.CoreCompileInputs.cache

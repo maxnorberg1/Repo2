@@ -1,0 +1,14 @@
+$primaryBtn: rgb(56, 146, 142);
+$textColor: black;
+
+header {
+    background-color: $primaryBtn;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header button {
+    background-color: red;
+    color: $textColor;
+    width: 300px;
+}

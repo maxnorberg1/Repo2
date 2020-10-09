@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  max-width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.headline {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 80px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.headline h1 {
+  font-size: clamp(2.5rem, 3vw, 3rem);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.headline-brand-span {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 700px;
+}
+
+.headline-model-span {
+  font-weight: 100;
+}
+
+.headline h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  font-size: clamp(1rem, 1.3vw, 1.3rem);
+}
+
+.section1 {
+  position: relative; top: 200px;
+  
+}
+
+.flex-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 300px;
+  padding-bottom: 90px;
+
+}
+
+.car-paragraph {
+  width: 50%;
+}
+
+.swiper-container {
+  width: 40vw;
+  height: 400px;
+margin-right: 50px;
+
+
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next {
+  color: rgb(255, 255, 255);
+  right: 30px;
+}
+
+.swiper-button-prev {
+  color: rgb(255, 255, 255);
+  left: 30px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(255, 255, 255);
+}
+
+.car-paragraph {
+  font-family: 'Nunito Sans', sans-serif;
+  line-height: 25px;
+}
+
+.car-paragraph h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: clamp(2rem, 2.5vw, 2.5rem);
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+  .flex-container {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 200px;
+  }
+
+  .car-paragraph {
+    width: 100%;
+  }
+
+  .swiper-container {
+    position: relative;
+    width: 100%;
+    height: 45vw;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section1 {
+    top: 150px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .swiper-button-next, .swiper-button-prev {
+    display: none;
+  }
+
+  .headline {
+    margin-bottom: 40px;
+  }
+}

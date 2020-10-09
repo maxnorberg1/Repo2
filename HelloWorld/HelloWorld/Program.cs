@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace HelloWorld
 {
@@ -12,7 +13,16 @@ namespace HelloWorld
             Console.WriteLine("Vad heter du?");
             string name = Console.ReadLine();
 
-            Console.WriteLine("Hej " + name + "!\r\n");
+            Console.WriteLine("Hej simp-" + name + "!\r\n");
+
+            string[] names = { "Max", "David", "Niklas", "Mazda" };
+
+            names.Reverse();
+
+            foreach (var arrayName in names)
+            {
+                Console.WriteLine(arrayName);
+            }
 
             Console.WriteLine("Hur gammal är du?");
 

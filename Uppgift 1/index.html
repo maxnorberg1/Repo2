@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Infogad javascript, notera att det görs i BODY -->
+    <script src="simple.js"> 
+    
+        function update() {
+            
+            var x = Math.floor(Math.random() * 1500);
+            var y = Math.floor(Math.random() * 1000);
+
+            var xSlut = Math.floor(Math.random() * 1500);
+            var ySlut = Math.floor(Math.random() * 1000);
+            
+            var colorPicker = Math.floor(Math.random() * 5);
+
+            if (colorPicker == 1) {
+                line(x, y, xSlut, ySlut, 3, "blue");
+            } else if (colorPicker == 2) {
+                line(x, y, xSlut, ySlut, 3, "red");
+            } else if (colorPicker == 3) {
+                line(x, y, xSlut, ySlut, 3, "green");
+            } else {
+                line(x, y, xSlut, ySlut, 3, "yellow");
+            }
+
+             
+
+
+        }
+
+        // for (let i = 0; i <= 10000; i++) {
+         //   rects();
+            
+       //  }
+        
+    </script>
+    
+</body>
+</html>

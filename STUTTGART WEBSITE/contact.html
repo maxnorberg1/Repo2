@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="icon" href="/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <a class="logo-link" href="index.html"><img class="logo" src="stuttgarttransp.png" style="width: 130px"></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav>
+
+
+      <ul class="navlinks">
+        <li>
+          <div class="nav-social">
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </li>
+        <li><a href="request.html">Request</a></li>
+        <li><a href="cars.html">Sold Cars</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a class="cta-link-mobile" href="contact.html">Contact</a></li>
+      </ul>
+
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+    <a class="cta" href="contact.html"><button class="cta-button">Contact</button></a>
+  </header>
+
+  <main>
+    <div class="contact-text" style="text-align:left">
+      <h1><i>Contact Us.</i></h1>
+      <p></p>
+    </div>
+    <div class="form-container">
+      <hr>
+      <form id="contact-form" method="POST" data-netlify="true">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="First name">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Last name">
+        <label for="email">Email Address</label>
+        <input type="text" id="email" name="emailinput" placeholder="Email">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something..." style="height:170px"></textarea>
+        <hr>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </main>
+
+</body>
+
+</html>

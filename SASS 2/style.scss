@@ -1,0 +1,20 @@
+$primaryColor: green;
+$buttonColor: blue;
+$textColor: black;
+
+header {
+    background-color: $primaryColor;
+
+}
+
+content {
+
+
+
+button {
+    background: $buttonColor;
+    &:hover {
+        background-color: gray;
+    }
+}
+}

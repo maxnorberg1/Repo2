@@ -1,0 +1,13 @@
+- Setup lintstaged + husky
+- SSR
+  - userAgent
+  - url
+- Lite version
+  - Remove:
+    - Loop
+    - Free mode
+    - Manipulation
+    - Autoheight
+    - Images
+    - Lazy loading
+- Emit events on classes (for React)

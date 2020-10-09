@@ -1,0 +1,19 @@
+header {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header h1 {
+  color: white;
+  font-family: serif;
+}
+
+.content .main-pic {
+  width: 100px;
+}
+/*# sourceMappingURL=style.css.map */
