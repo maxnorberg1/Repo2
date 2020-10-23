@@ -1,11 +1,10 @@
 @import "./variables";
 @import "./functions";
+@import "./navbar";
+@import "./slideshow";
 
-body {
-
-    @include color($redder);
-}
-
-.test {
-    @include change_font_size($super_large);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }

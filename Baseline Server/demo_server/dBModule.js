@@ -7,6 +7,9 @@ db.once('open', function () {
     // we're connected!
 });
 
+exports.findInDB = async (element) => {
+  return await element.find({})
+}
 
 
 exports.storeElement = (element) => {

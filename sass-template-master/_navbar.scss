@@ -1,0 +1,26 @@
+@import "./functions";
+@import "./variables";
+
+.navbar {
+    @include displayFlex();
+    background-color: $bgcColor;
+    ul {
+        list-style-type: none;
+        display: flex;
+        a {
+            display: block;
+            text-decoration: none;
+            color: $textColor;
+            padding: 20px;
+            font-family: $primaryFont;
+
+            &.active {
+                color: black;
+            }
+
+            &:hover {
+                color: $hoverColor;
+            }
+        }
+    }
+}

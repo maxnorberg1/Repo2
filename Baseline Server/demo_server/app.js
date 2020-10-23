@@ -1,6 +1,7 @@
 const express = require('express')
 const dBModule = require('./dBModule')
 const personModel = require('./PersonModel')
+const messageModel = require('./MessageModel')
 const app = express()
 const port = 3000
 
@@ -15,6 +16,13 @@ app.set('view engine', 'ejs')
 app.get('/', (req, res) => {
   res.render('pages/index.ejs', {name: ' Max'})
 })
+
+
+app.get('/messages', async (req, res) => {
+  let messages = await messageModel.getAllMessages()
+  res.render("pages/messages.ejs", { names: messages })
+})
+
 
 app.get('/', (req, res) => {
   res.sendFile(clientDir + "index.html")

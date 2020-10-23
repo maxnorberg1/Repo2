@@ -1,8 +1,56 @@
-body {
-  background-color: #990000;
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-bottom: auto;
+  background-color: white;
 }
 
-.test {
-  font-size: 165px;
+.navbar ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar ul a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar ul a.active {
+  color: black;
+}
+
+.navbar ul a:hover {
+  color: grey;
+}
+
+.mySlides {
+  display: none;
+}
+
+.w3-left, .w3-right, .w3-badge {
+  cursor: pointer;
+}
+
+.w3-badge {
+  height: 13px;
+  width: 13px;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=master.css.map */
