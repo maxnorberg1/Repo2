@@ -1,0 +1,15 @@
+C:\Users\max.norberg1\Documents\GitHub\Repo2\WPFDemo\WPFDemo\bin\Debug\WPFDemo.exe.config
+C:\Users\max.norberg1\Documents\GitHub\Repo2\WPFDemo\WPFDemo\bin\Debug\WPFDemo.exe
+C:\Users\max.norberg1\Documents\GitHub\Repo2\WPFDemo\WPFDemo\bin\Debug\WPFDemo.pdb
+C:\Users\max.norberg1\Documents\GitHub\Repo2\WPFDemo\WPFDemo\obj\Debug\WPFDemo.csprojAssemblyReference.cache
+C:\Users\max.norberg1\Documents\GitHub\Repo2\WPFDemo\WPFDemo\obj\Debug\MainWindow.g.cs
+C:\Users\max.norberg1\Documents\GitHub\Repo2\WPFDemo\WPFDemo\obj\Debug\App.g.cs
+C:\Users\max.norberg1\Documents\GitHub\Repo2\WPFDemo\WPFDemo\obj\Debug\WPFDemo_MarkupCompile.cache
+C:\Users\max.norberg1\Documents\GitHub\Repo2\WPFDemo\WPFDemo\obj\Debug\WPFDemo_MarkupCompile.lref
+C:\Users\max.norberg1\Documents\GitHub\Repo2\WPFDemo\WPFDemo\obj\Debug\MainWindow.baml
+C:\Users\max.norberg1\Documents\GitHub\Repo2\WPFDemo\WPFDemo\obj\Debug\WPFDemo.g.resources
+C:\Users\max.norberg1\Documents\GitHub\Repo2\WPFDemo\WPFDemo\obj\Debug\WPFDemo.Properties.Resources.resources
+C:\Users\max.norberg1\Documents\GitHub\Repo2\WPFDemo\WPFDemo\obj\Debug\WPFDemo.csproj.GenerateResource.cache
+C:\Users\max.norberg1\Documents\GitHub\Repo2\WPFDemo\WPFDemo\obj\Debug\WPFDemo.csproj.CoreCompileInputs.cache
+C:\Users\max.norberg1\Documents\GitHub\Repo2\WPFDemo\WPFDemo\obj\Debug\WPFDemo.exe
+C:\Users\max.norberg1\Documents\GitHub\Repo2\WPFDemo\WPFDemo\obj\Debug\WPFDemo.pdb

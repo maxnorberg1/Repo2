@@ -7,15 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="/" method="post">
+    <form action="/messages" method="post">
         <input type="email" name="email" placeholder="example@email.com">
         <input type="text" name="message" placeholder="message">
         <button type="submit">Okej</button>
     </form>
 
     <% for( let i = 0; i < names.length; i++ ) { %>
-        <h1><%- names[i] %> </h1>
+        <h1><%- names[i].email %> </h1>
+        <p><%- names[i].messageType %> </p>
     <% } %>
+    
 </body>
 </html>
 

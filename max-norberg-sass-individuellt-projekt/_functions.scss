@@ -1,9 +1,9 @@
 @import "./variables";
 
 
-@mixin color($color){
+@mixin color($color) {
     background-color: $color;
-} 
+}
 
 @mixin change_font_size($font) {
     font-size: $font;
@@ -12,6 +12,7 @@
 @mixin displayFlex() {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     margin-bottom: auto;
 }

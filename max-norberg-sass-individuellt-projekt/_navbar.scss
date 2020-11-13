@@ -4,14 +4,21 @@
 .navbar {
     @include displayFlex();
     background-color: $bgcColor;
+    width: 100vw;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+
     ul {
         list-style-type: none;
         display: flex;
+
         a {
             display: block;
             text-decoration: none;
             color: $textColor;
             padding: 20px;
+            padding-bottom: 0;
             font-family: $primaryFont;
 
             &.active {
@@ -23,4 +30,19 @@
             }
         }
     }
+
+    .logo-box {
+        padding-top: 10px;
+        margin-left: 5%;
+        position: fixed;
+        left: 5%;
+
+        h1 {
+            font-family: $logoFont;
+            font-size: 26px;
+
+        }
+    }
+
+
 }

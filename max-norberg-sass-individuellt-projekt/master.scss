@@ -1,0 +1,64 @@
+@import "./variables";
+@import "./functions";
+@import "./navbar";
+@import "./slideshow";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.heading {
+    position: fixed;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, 50%);
+
+    h1 {
+        font-size: 92px;
+        color: white;
+        margin-bottom: 30px;
+    }
+
+    .cta-button-1 {
+        width: 160px;
+        height: 70px;
+        background-color: $bgcColor;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        border: 2px solid white;
+
+
+        &:hover {
+            background-color: black;
+
+            p {
+                color: white;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+
+
+        p {
+            font-size: 18px;
+            font-family: $logoFont;
+            padding-top: 15px;
+            color: blue;
+        }
+
+    }
+
+}

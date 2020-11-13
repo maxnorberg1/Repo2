@@ -12,9 +12,9 @@ exports.findInDB = async (element) => {
 }
 
 
-exports.storeElement = (element) => {
+exports.storeElement = async (element) => {
   
-     element.save(()=>{
+     await element.save(()=>{
        console.log("Successfully saved element in database!")
      })
 }

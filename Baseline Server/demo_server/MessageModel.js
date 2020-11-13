@@ -9,10 +9,17 @@ const Message = mongoose.model('Message', messageSchema);
 
 
 exports.createMessage = (email, messageType) => {
-    var person = new Person({
+    var message = new Message({
         email: email, 
         messageType: messageType
     })
 
     return message
+}
+
+exports.getAllMessages = async () => {
+    let messages = await Message.find({});
+
+    return messages
+
 }

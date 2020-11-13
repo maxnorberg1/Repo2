@@ -1,0 +1,140 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: auto;
+  background-color: white;
+  width: 100vw;
+  -webkit-box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.3);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar ul a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 20px;
+  padding-bottom: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar ul a.active {
+  color: black;
+}
+
+.navbar ul a:hover {
+  color: grey;
+}
+
+.navbar .logo-box {
+  padding-top: 10px;
+  margin-left: 5%;
+  position: fixed;
+  left: 5%;
+}
+
+.navbar .logo-box h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 26px;
+}
+
+.mySlides {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.w3-left,
+.w3-right,
+.w3-badge {
+  cursor: pointer;
+}
+
+.w3-badge {
+  height: 13px;
+  width: 13px;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.heading {
+  position: fixed;
+  left: 50%;
+  top: 20%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
+.heading h1 {
+  font-size: 92px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.heading .cta-button-1 {
+  width: 160px;
+  height: 70px;
+  background-color: white;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.heading .cta-button-1:hover {
+  background-color: black;
+}
+
+.heading .cta-button-1:hover p {
+  color: white;
+}
+
+.heading .cta-button-1:hover a {
+  text-decoration: none;
+  color: white;
+}
+
+.heading .cta-button-1 p {
+  font-size: 18px;
+  font-family: "Anton", sans-serif;
+  padding-top: 15px;
+  color: blue;
+}
+/*# sourceMappingURL=master.css.map */

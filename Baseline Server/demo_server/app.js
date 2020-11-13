@@ -20,29 +20,26 @@ app.get('/', (req, res) => {
 
 app.get('/messages', async (req, res) => {
   let messages = await messageModel.getAllMessages()
-  res.render("pages/messages.ejs", { names: messages })
+  res.render("pages/messages.ejs", { names: messages.reverse() })
 })
 
 
-app.get('/', (req, res) => {
-  res.sendFile(clientDir + "index.html")
-})
-
-app.get('/stilen', (req, res) => {
-  res.sendFile(clientDir + "style.css")
-})
-
-app.get('/jesus', (req, res) => {
-  res.sendFile(clientDir + "download.jpg")
-})
-
-app.post('/', (req, res) => {
+app.post('/', async (req, res) => {
 
   let person = personModel.createPerson(req.body.name, req.body.email, req.body.age)
   
-  dBModule.storeElement(person)
+  await dBModule.storeElement(person)
 
   res.render('pages/index.ejs', {name: ' ' + req.body.name})
+})
+
+app.post('/messages', async (req, res) => {
+
+  let message = messageModel.createMessage(req.body.email, req.body.message)
+  
+  await dBModule.storeElement(message)
+
+  res.redirect('/messages')
 })
 
 app.listen(port, () => {
